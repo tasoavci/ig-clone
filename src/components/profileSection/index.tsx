@@ -539,7 +539,9 @@ const ProfileSection = ({ userName }: Props) => {
               <div className="fixed h-[40%] w-full p-4 ekran836:right-0 ekran836:top-0  ekran836:h-full ekran836:w-[35%]">
                 <div className="flex h-full flex-col justify-between">
                   <div>
-                    <EllipsisHorizontonalIcon />
+                    <div className="hidden ekran836:block">
+                      <EllipsisHorizontonalIcon />
+                    </div>
 
                     <div className="w-full">
                       {/* COMMENTS */}
@@ -846,7 +848,9 @@ const ProfileSection = ({ userName }: Props) => {
               <div className="fixed h-[40%] w-full p-4 ekran836:right-0 ekran836:top-0  ekran836:h-full ekran836:w-[35%]">
                 <div className="flex h-full flex-col justify-between">
                   <div>
-                    <EllipsisHorizontonalIcon />
+                    <div className="hidden ekran836:block">
+                      <EllipsisHorizontonalIcon />
+                    </div>
 
                     <div className="w-full">
                       {/* COMMENTS */}
@@ -1040,7 +1044,9 @@ const ProfileSection = ({ userName }: Props) => {
               <div className="fixed h-[40%] w-full p-4 ekran836:right-0 ekran836:top-0  ekran836:h-full ekran836:w-[35%]">
                 <div className="flex h-full flex-col justify-between">
                   <div>
-                    <EllipsisHorizontonalIcon />
+                    <div className="hidden ekran836:block">
+                      <EllipsisHorizontonalIcon />
+                    </div>
 
                     <div className="w-full">
                       {/* COMMENTS */}
@@ -1228,7 +1234,9 @@ const ProfileSection = ({ userName }: Props) => {
               <div className="fixed h-[40%] w-full p-4 ekran836:right-0 ekran836:top-0  ekran836:h-full ekran836:w-[35%]">
                 <div className="flex h-full flex-col justify-between">
                   <div>
-                    <EllipsisHorizontonalIcon />
+                    <div className="hidden ekran836:block">
+                      <EllipsisHorizontonalIcon />
+                    </div>
 
                     <div className="w-full">
                       {/* COMMENTS */}
@@ -1368,6 +1376,7 @@ const ProfileSection = ({ userName }: Props) => {
             </div>
           </>
         )}
+        <div className="mb-20 w-full ekran836:hidden"></div>
         <div className="hidden items-center justify-center gap-4 px-8 pb-5 pt-8 text-xs text-gray-400 lg:flex">
           <span>Meta</span>
           <span>About</span>
