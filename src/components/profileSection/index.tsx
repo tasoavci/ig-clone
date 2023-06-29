@@ -307,6 +307,16 @@ const ProfileSection = ({ userName }: Props) => {
   const PostHeart = isheartTapped
     ? `text-red-500 transition duration-500`
     : `transition duration-500`;
+
+  const commentBorder =
+    item.length !== 0 ? `border-b-[1px] border-white/20` : ``;
+  const commentBorder2 =
+    item2.length !== 0 ? `border-b-[1px] border-white/20` : ``;
+  const commentBorder3 =
+    item3.length !== 0 ? `border-b-[1px] border-white/20` : ``;
+  const commentBorder4 =
+    item4.length !== 0 ? `border-b-[1px] border-white/20` : ``;
+
   return (
     <section id="profile">
       <div className="h-full   pt-[30px]">
@@ -510,7 +520,7 @@ const ProfileSection = ({ userName }: Props) => {
               />
             </button>
 
-            <div className=" fixed  left-[50%] top-[50%] h-[70%] w-[80%] translate-x-[-50%]  translate-y-[-50%] transform bg-black ekran836:flex  lg:h-[95%] lg:w-[91%] ">
+            <div className=" fixed left-[50%] top-[50%] h-[70%] w-[80%] translate-x-[-50%] translate-y-[-50%]  transform bg-black ekran836:flex  lg:h-[95%] lg:w-[91%] ">
               {/* PHOTO */}
 
               <div className="relative inset-0 top-0 z-0 h-[60%] w-full ekran836:h-full ekran836:w-[65%]">
@@ -571,7 +581,7 @@ const ProfileSection = ({ userName }: Props) => {
                               <h1 className="mb-3 flex w-full items-center justify-center text-2xl text-gray-400">
                                 Comments
                               </h1>
-                              <div className="mmt-2 flex items-center justify-between border-b-[1px] border-white/20 py-2">
+                              <div className="mt-2 flex items-center justify-between border-b-[1px] border-white/20 py-2">
                                 <div className="flex items-center">
                                   <span className="text-sm font-bold">
                                     burcuuekiiz
@@ -630,7 +640,9 @@ const ProfileSection = ({ userName }: Props) => {
                                   <HeartIcon className={`${heart4} h-4 w-4`} />
                                 </button>
                               </div>
-                              <div className="mt-2  flex items-center justify-between border-b-[1px] border-white/20 py-2">
+                              <div
+                                className={`${commentBorder} mt-2  flex items-center justify-between  py-2`}
+                              >
                                 <div className=" flex flex-col items-start justify-start ">
                                   {item.map((item, index) => (
                                     <>
@@ -744,7 +756,7 @@ const ProfileSection = ({ userName }: Props) => {
                     </div>
                   </div>
 
-                  <div className=" flex flex-col border-t-[1px] border-white border-opacity-20 pt-4">
+                  <div className=" flex flex-col  pt-2 ekran836:border-t-[1px] ekran836:border-white ekran836:border-opacity-20 ekran836:pt-4">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center justify-center">
                         <button onClick={handleLike}>
@@ -883,7 +895,9 @@ const ProfileSection = ({ userName }: Props) => {
                                 Comments
                               </h1>
 
-                              <div className="mt-2  flex items-center justify-between border-b-[1px] border-white/20 py-2">
+                              <div
+                                className={`${commentBorder2} mt-2  flex items-center justify-between  py-2`}
+                              >
                                 <div className=" flex flex-col items-start justify-start ">
                                   {item2.map((item2, index) => (
                                     <>
@@ -940,7 +954,7 @@ const ProfileSection = ({ userName }: Props) => {
                     </div>
                   </div>
 
-                  <div className=" flex flex-col border-t-[1px] border-white border-opacity-20 pt-4">
+                  <div className=" flex flex-col pt-2 ekran836:border-t-[1px] ekran836:border-white ekran836:border-opacity-20 ekran836:pt-4">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center justify-center">
                         <button onClick={handleLike2}>
@@ -1079,7 +1093,9 @@ const ProfileSection = ({ userName }: Props) => {
                                 Comments
                               </h1>
 
-                              <div className="mt-2  flex items-center justify-between border-b-[1px] border-white/20 py-2">
+                              <div
+                                className={` ${commentBorder3} mt-2  flex items-center justify-between  py-2`}
+                              >
                                 <div className=" flex flex-col items-start justify-start ">
                                   {item3.map((item3, index) => (
                                     <>
@@ -1136,7 +1152,7 @@ const ProfileSection = ({ userName }: Props) => {
                     </div>
                   </div>
 
-                  <div className=" flex flex-col border-t-[1px] border-white border-opacity-20 pt-4">
+                  <div className=" flex flex-col pt-2 ekran836:border-t-[1px] ekran836:border-white ekran836:border-opacity-20 ekran836:pt-4">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center justify-center">
                         <button onClick={handleLike3}>
@@ -1269,7 +1285,9 @@ const ProfileSection = ({ userName }: Props) => {
                                 Comments
                               </h1>
 
-                              <div className="mt-2  flex items-center justify-between border-b-[1px] border-white/20 py-2">
+                              <div
+                                className={`${commentBorder4} mt-2  flex items-center justify-between  py-2`}
+                              >
                                 <div className=" flex flex-col items-start justify-start ">
                                   {item4.map((item4, index) => (
                                     <>
@@ -1326,7 +1344,7 @@ const ProfileSection = ({ userName }: Props) => {
                     </div>
                   </div>
 
-                  <div className=" flex flex-col border-t-[1px] border-white border-opacity-20 pt-4">
+                  <div className=" flex flex-col pt-2 ekran836:border-t-[1px] ekran836:border-white ekran836:border-opacity-20 ekran836:pt-4">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center justify-center">
                         <button onClick={handleLike4}>
